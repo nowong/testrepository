@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('step1') {
       steps {
-        sleep 60
+        svn 'http://svn.it.egltours.com/svn/repos/nfit/portal_one/trunk/portal-one-parent'
+        build 'pipelinetest'
       }
     }
   }
